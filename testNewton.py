@@ -82,12 +82,6 @@ class TestNewton(unittest.TestCase):
     	df = lambda x: 2*x + 4
     	ansolver=newton.Newton(f, tol=1.e-15,maxiter=1000, Df=df)
     	self.assertRaises(Exception, ansolver.solve, x0)
-    
-
-
-
-
-
 
 if __name__ == "__main__":
     unittest.main()
