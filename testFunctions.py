@@ -64,10 +64,7 @@ class TestFunctions(unittest.TestCase):
         x0 = 5
         Df_xap = F.ApproximateJacobian(f,x0,dx)
         Df_xan = F.AnalyticalJacobian(Df,x0)
-        self.assertTrue(abs(Df_xap-Df_xan)<0.000005) #Not close enough to pass assert almost equal 
-
-
-        
+        self.assertTrue(abs(Df_xap-Df_xan)<0.000005) #Not close enough to pass assert almost equal   
 
 if __name__ == '__main__':
     unittest.main()
