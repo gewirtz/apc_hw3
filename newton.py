@@ -11,7 +11,9 @@ class Newton(object):
         """Return a new object to find roots of f(x) = 0 using Newton's method.
         tol:     tolerance for iteration (iterate until |f(x)| < tol)
         maxiter: maximum number of iterations to perform
-        dx:      step size for computing approximate Jacobian"""
+        dx:      step size for computing approximate Jacobian
+        Df: the derivative of f
+        r:        the radius allowed from initial guess to correct solution"""
         self._f = f
         self._tol = tol
         self._maxiter = maxiter
