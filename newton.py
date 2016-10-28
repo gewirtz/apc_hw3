@@ -12,7 +12,7 @@ class Newton(object):
         tol:     tolerance for iteration (iterate until |f(x)| < tol)
         maxiter: maximum number of iterations to perform
         dx:      step size for computing approximate Jacobian
-        Df: the derivative of f
+        Df: the analytic Jacobian
         r:        the radius allowed from initial guess to correct solution"""
         self._f = f
         self._tol = tol
